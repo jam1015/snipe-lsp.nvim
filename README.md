@@ -30,9 +30,11 @@ You can configure snipe-lsp by passing a table to the setup function. Here is an
 
 ```lua
 {
-	open_symbols_menu = '<leader>ds',
-	open_symbols_menu_for_split = '<leader>sds',
-	open_symbols_menu_for_vsplit = '<leader>vds',
+    keymap = {
+        open_symbols_menu = '<leader>ds',
+        open_symbols_menu_for_split = '<leader>sds',
+        open_symbols_menu_for_vsplit = '<leader>vds',
+    },
 }
 ```
 
