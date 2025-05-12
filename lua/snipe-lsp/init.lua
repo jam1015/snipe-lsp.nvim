@@ -126,11 +126,11 @@ return {
 		}, config or {})
 
 		-- Keymap to open the symbols menu and navigate
-		vim.keymap.set('n', config.keymap.open_symbols_menu, open_symbols_menu, { desc = 'Navigate LSP Symbols' })
-		vim.keymap.set('n', config.keymap.open_symbols_menu_for_split, open_symbols_menu_for_split("split"),
-			{ desc = 'Navigate LSP Symbols and open in a split pane' })
-		vim.keymap.set('n', config.keymap.open_symbols_menu_for_vsplit, open_symbols_menu_for_split("vsplit"),
-			{ desc = 'Navigate LSP Symbols and open in a vertical split pane' })
+		-- vim.keymap.set('n', config.keymap.open_symbols_menu, open_symbols_menu, { desc = 'Navigate LSP Symbols' })
+		-- vim.keymap.set('n', config.keymap.open_symbols_menu_for_split, open_symbols_menu_for_split("split"),
+		--	{ desc = 'Navigate LSP Symbols and open in a split pane' })
+		-- vim.keymap.set('n', config.keymap.open_symbols_menu_for_vsplit, open_symbols_menu_for_split("vsplit"),
+		--	{ desc = 'Navigate LSP Symbols and open in a vertical split pane' })
 
 		-- register the commands
 		vim.api.nvim_create_user_command('SnipeLspSymbols', open_symbols_menu, { nargs = 0 })
